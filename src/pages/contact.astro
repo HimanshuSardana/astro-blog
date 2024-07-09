@@ -11,8 +11,10 @@ import Navbar from "./components/Navbar.astro";
   </head>
   <body class="bg-zinc-800 text-white">
     <Navbar />
-    <div class="leading-3 w-1/2 mx-auto my-40">
-      <div class="text flex flex-row gap-5 items-end">
+    <div class="leading-3 lg:w-1/2 md:w-1/2 sm:w-2/3 mx-auto my-40">
+      <div
+        class="text flex lg:flex-row sm:flex-col md:flex-row gap-5 lg:items-end sm:items-start md:items-end"
+      >
         <span class="text-7xl font-black">Contact Me</span>
         <span
           class="text-3xl hover:text-blue-500 transition font-bold text-zinc-600"
@@ -21,7 +23,7 @@ import Navbar from "./components/Navbar.astro";
       </div>
       <div class="mt-10 flex flex-row gap-5">
         <button
-          class="px-5 py-3 font-bold text-md border border-white border-2 bg-white text-zinc-800 rounded-full flex items-center gap-3"
+          class="px-5 hover:translate-y-[-5px] transition py-3 font-bold text-md border border-white border-2 bg-transparent text-white rounded-full flex items-center gap-3"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

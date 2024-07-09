@@ -23,8 +23,12 @@ import BaseLayout from "./BaseLayout.astro";
     > Back to blog</a
   >
   <br />
-  <h3 class="text-8xl font-black">{frontmatter.title}</h3>
-  <h3 class="text-zinc-400 text-2xl font-bold mt-3">
+  <h3 class="lg:text-8xl md:text-8xl sm:text-6xl font-black">
+    {frontmatter.title}
+  </h3>
+  <h3
+    class="text-zinc-400 lg:text-2xl md:text-2xl sm:text-xl font-bold lg:mt-3 md:mt-3 sm:mt-0"
+  >
     Published on: {new Date(frontmatter.pubDate).toLocaleDateString("en-us")}
   </h3>
   <br /><br />

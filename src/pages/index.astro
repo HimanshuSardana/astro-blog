@@ -16,18 +16,20 @@ import { ViewTransitions } from "astro:transitions";
     <Navbar />
     <div
       transition:name="page-fade"
-      class="leading-3 w-1/2 mx-auto my-40 flex flex-col gap-3"
+      class="leading-3 lg:w-1/2 md:w-1/2 sm:w-2/3 mx-auto my-40 flex flex-col gap-3"
     >
       <div>
-        <h1 class="text-7xl font-black align-left">Hey! 👋</h1>
-        <h1 class="mt-3 text-7xl font-black">
+        <h1 class="md:text-7xl lg:text-7xl sm:text-7xl font-black align-left">
+          Hey! 👋
+        </h1>
+        <h1 class="mt-3 md:text-7xl sm:text-7xl lg:text-7xl font-black">
           I'm <span class="text-blue-500">Himanshu Sardana</span>
         </h1>
       </div>
-      <div class="flex lg:flex-row md: flex-row sm:flex-col gap-5 mt-10">
+      <div class="flex lg:flex-row md:flex-row sm:flex-col gap-5 mt-10">
         <a
           href="/projects"
-          class="px-5 py-3 font-bold text-md bg-blue-500 text-white rounded-full flex items-center gap-3"
+          class="px-5 py-3 md:hover:translate-y-[-5px] lg:hover:translate-y-[-5px] transition font-bold text-md bg-blue-500 w-auto text-center flex justify-center /2 text-white rounded-full flex items-center gap-3"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +55,7 @@ import { ViewTransitions } from "astro:transitions";
           See My Work</a
         >
         <button
-          class="px-5 py-3 font-bold text-md border border-white border-2 bg-transparent text-white rounded-full flex items-center gap-3"
+          class="px-5 hover:translate-y-[-5px] md:hovertranslate-y-[-5px] sm:hover:translate-y-0 flex justify-center transition py-3 font-bold text-md border border-white border-2 bg-transparent text-white rounded-full flex items-center gap-3"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,9 +97,11 @@ import { ViewTransitions } from "astro:transitions";
         class="mt-5 border border-1 border-zinc-700 border-text-zinc-500 bg-zinc-500"
       />
       <div class="about">
-        <div class="text flex gap-3 items-end">
-          <h3 class="font-black mt-5 text-5xl">Stuff I Know</h3>
-          <h3 class="font-bold mt-10 text-zinc-500 text-2xl">
+        <div
+          class="text flex mt-5 sm:flex-col md:flex-row lg:flex-row gap-3 sm:items-start sm:gap-1 md:items-end lg:items-end"
+        >
+          <h3 class="font-black text-5xl">Stuff I Know</h3>
+          <h3 class="font-bold text-zinc-500 text-2xl">
             (a thing or two about)
           </h3>
         </div>
